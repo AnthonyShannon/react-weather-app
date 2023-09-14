@@ -1,24 +1,46 @@
 {
-  "name": "react-weather-app-server",
-  "version": "1.0.0",
-  "description": "Server side api calls for a weather app",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
-    "start:prod": "node server.js",
-    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
-    "client": "cd client && npm run start",
-    "install": "cd client && npm install",
-    "build": "cd client && npm run build"
-  },
-  "author": "",
-  "license": "ISC",
+  "name": "react-weather-app",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "concurrently": "^8.2.1",
-    "dotenv": "^16.3.1",
-    "express": "^4.18.2",
-    "nodemon": "^3.0.1",
-    "typescript": "^5.2.2"
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.50",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
+    "axios": "^1.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-dotenv": "^0.1.3",
+    "react-scripts": "5.0.1",
+    "reactstrap": "^9.2.0",
+    "typescript": "^4.9.5",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-dotenv && react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
