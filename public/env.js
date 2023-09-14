@@ -47,7 +47,7 @@ window.env = {
   "npm_package_name": "react-weather-app",
   "npm_package_version": "0.1.0",
   "NUMBER_OF_PROCESSORS": "8",
-  "OLDPWD": "C:/Users/ashan",
+  "OLDPWD": "C:/Users/ashan/Code",
   "OneDrive": "C:\\Users\\ashan\\OneDrive",
   "OneDriveConsumer": "C:\\Users\\ashan\\OneDrive",
   "OS": "Windows_NT",
