@@ -18,7 +18,19 @@ function App() {
     visibility: 0,
     humidity: 0,
     icon: '',
-  })
+  });
+  const [HourlyForecast, setHourlyForecast] = useState([
+    {dateTime: new Date(),
+    temp: 0,
+    feelsLike: 0,
+    pressure: 0,
+    humidity: 0,
+    dewPoint: 0,
+    visibility: 0,
+    windSpeed: 0,
+    windDirection: 0,
+    description: '', 
+    icon: ''}])
 
   const getWeather = async () => {
     axios.get(`https://api.openweathermap.org/data/3.0/onecall?units=imperial&lat=38.8339578&lon=-104.825348&exclude=minutely&appid=${env.API_KEY}`)

@@ -51,7 +51,7 @@ window.env = {
   "OneDrive": "C:\\Users\\ashan\\OneDrive",
   "OneDriveConsumer": "C:\\Users\\ashan\\OneDrive",
   "OS": "Windows_NT",
-  "PATH": "C:\\Users\\ashan\\Code\\react-weather-app\\node_modules\\.bin;C:\\Users\\ashan\\Code\\node_modules\\.bin;C:\\Users\\ashan\\node_modules\\.bin;C:\\Users\\node_modules\\.bin;C:\\node_modules\\.bin;C:\\Users\\ashan\\AppData\\Roaming\\npm\\node_modules\\npm\\node_modules\\@npmcli\\run-script\\lib\\node-gyp-bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\ashan\\bin;C:\\Program Files\\Amazon Corretto\\jdk11.0.14_10\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0;C:\\WINDOWS\\System32\\OpenSSH;C:\\Program Files\\Git\\cmd;C:\\Program Files\\dotnet;C:\\Program Files\\nodejs;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin;C:\\Users\\ashan\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ashan\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Program Files\\JetBrains\\IntelliJ IDEA Community Edition 2021.3.2\\bin;C:\\Program Files (x86)\\ClockworkMod\\Universal Adb Driver;C:\\Users\\ashan\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\ashan\\AppData\\Roaming\\npm;C:\\Program Files\\MongoDB\\Server\\7.0\\bin",
+  "PATH": "C:\\Users\\ashan\\Code\\react-weather-app\\node_modules\\.bin;C:\\Users\\ashan\\Code\\node_modules\\.bin;C:\\Users\\ashan\\node_modules\\.bin;C:\\Users\\node_modules\\.bin;C:\\node_modules\\.bin;C:\\Users\\ashan\\AppData\\Roaming\\npm\\node_modules\\npm\\node_modules\\@npmcli\\run-script\\lib\\node-gyp-bin;C:\\Program Files\\Git\\mingw64\\bin;C:\\Program Files\\Git\\usr\\bin;C:\\Users\\ashan\\bin;C:\\Program Files\\Amazon Corretto\\jdk11.0.14_10\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0;C:\\WINDOWS\\System32\\OpenSSH;C:\\Program Files\\Git\\cmd;C:\\Program Files\\dotnet;C:\\Program Files\\nodejs;C:\\ProgramData\\chocolatey\\bin;C:\\Users\\ashan\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ashan\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Program Files\\JetBrains\\IntelliJ IDEA Community Edition 2021.3.2\\bin;C:\\Program Files (x86)\\ClockworkMod\\Universal Adb Driver;C:\\Users\\ashan\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\ashan\\AppData\\Roaming\\npm;C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin;C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin;C:\\Program Files\\MongoDB\\Server\\7.0\\bin",
   "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC",
   "PLINK_PROTOCOL": "ssh",
   "PROCESSOR_ARCHITECTURE": "AMD64",
@@ -79,7 +79,7 @@ window.env = {
   "WINDIR": "C:\\WINDOWS",
   "WSLENV": "WT_SESSION::WT_PROFILE_ID",
   "WT_PROFILE_ID": "{f964880e-9be5-4a27-b7d3-b9a11d8cd9af}",
-  "WT_SESSION": "f213be81-5de7-48d3-a3ce-a891f94a5abd",
+  "WT_SESSION": "e0e726f4-15cf-4a27-80df-8f4fe4f3c8d8",
   "ZES_ENABLE_SYSMAN": "1",
   "_": "C:/Program Files/nodejs/node.exe"
 };

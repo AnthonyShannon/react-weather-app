@@ -1,23 +1,9 @@
 import React from 'react';
 import WeatherIcon from './WeatherIcon';
 import { Container } from 'reactstrap';
+import { CurrentWeatherTypes } from '../resources/interfaces';
 
-interface CurrentWeather {
-    currentWeather: {
-        city: string,
-        temp: number,
-        feelsLike: number,
-        description: string,
-        windSpeed: number,
-        windDirection: number,
-        visibility: number,
-        humidity: number,
-        icon: string,
-    }
-}
-
-
-const CurrentWeather = ({ currentWeather }: CurrentWeather) => {
+const CurrentWeather = ({ currentWeather }: CurrentWeatherTypes) => {
     const { city,
         temp,
         feelsLike,
@@ -45,4 +31,4 @@ const CurrentWeather = ({ currentWeather }: CurrentWeather) => {
     )
 }
 
-export default CurrentWeather;
+export default CurrentWeather; 
