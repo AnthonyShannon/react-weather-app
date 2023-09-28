@@ -1,4 +1,4 @@
-import CurrentWeather from "./CurrentWeather";
-import HourlyForecast from "./HourlyForecast";
+import CurrentWeather from "./CurrentWeather/CurrentWeather";
+import HourlyForecast from "./HourlyForecast/HourlyForecast";
 
 export { CurrentWeather, HourlyForecast };

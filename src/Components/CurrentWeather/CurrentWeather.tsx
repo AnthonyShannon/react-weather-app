@@ -1,7 +1,6 @@
 import React from 'react';
-import WeatherIcon from './WeatherIcon';
-import { Container } from 'reactstrap';
-import { CurrentWeatherTypes } from '../resources/interfaces';
+import WeatherIcon from '../WeatherIcon';
+import { CurrentWeatherTypes } from '../../resources/interfaces';
 
 const CurrentWeather = ({ currentWeather }: CurrentWeatherTypes) => {
     const { city,
@@ -17,7 +16,7 @@ const CurrentWeather = ({ currentWeather }: CurrentWeatherTypes) => {
         const formattedDesc = description.charAt(0).toUpperCase() + description.slice(1);
 
     return (
-        <Container>
+        // <Container>
             <div className='d-flex flex-column'>
                 <span>{city}</span>
                 <div className='d-flex flex-column'>
@@ -27,7 +26,7 @@ const CurrentWeather = ({ currentWeather }: CurrentWeatherTypes) => {
                     <span>{`Visibility: ${visibility}m`}</span>
                 </div>
             </div>
-        </ Container>
+        // </ Container>
     )
 }
 

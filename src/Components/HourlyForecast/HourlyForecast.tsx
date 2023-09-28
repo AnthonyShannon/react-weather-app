@@ -1,5 +1,5 @@
 import React from 'react';
-import { HourlyForecastTypes } from '../resources/interfaces';
+import { HourlyForecastTypes } from '../../resources/interfaces';
 
 const HourlyForecast = ({hourlyWeather}: HourlyForecastTypes) => {
     return (

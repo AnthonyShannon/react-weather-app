@@ -79,7 +79,7 @@ window.env = {
   "WINDIR": "C:\\WINDOWS",
   "WSLENV": "WT_SESSION::WT_PROFILE_ID",
   "WT_PROFILE_ID": "{f964880e-9be5-4a27-b7d3-b9a11d8cd9af}",
-  "WT_SESSION": "e0e726f4-15cf-4a27-80df-8f4fe4f3c8d8",
+  "WT_SESSION": "4ce45f0b-26fe-41c2-8428-2a6992312c24",
   "ZES_ENABLE_SYSMAN": "1",
   "_": "C:/Program Files/nodejs/node.exe"
 };
