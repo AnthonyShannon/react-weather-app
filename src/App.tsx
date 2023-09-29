@@ -1,36 +1,16 @@
 import React, { useEffect, useState } from 'react';
-import { CurrentWeather, HourlyForecast } from './Components';
+import { CurrentWeather, HourlyForecast, Container } from './Components';
 import env from 'react-dotenv';
 import axios from 'axios';
-import { getCurrentWeather } from './resources/getWeather'
-import './App.css';
+import { getCurrentWeather } from './resources/getWeather';
+import { currentWeatherObj, hourlyWeatherObj } from './resources/stateTemplates';
+import './App.scss';
 
 
 function App() {
 
-  const [currentWeather, setCurrentWeather] = useState({
-    city: '',
-    temp: 0,
-    feelsLike: 0,
-    description: '',
-    windSpeed: 0,
-    windDirection: 0,
-    visibility: 0,
-    humidity: 0,
-    icon: '',
-  });
-  const [HourlyForecast, setHourlyForecast] = useState([
-    {dateTime: new Date(),
-    temp: 0,
-    feelsLike: 0,
-    pressure: 0,
-    humidity: 0,
-    dewPoint: 0,
-    visibility: 0,
-    windSpeed: 0,
-    windDirection: 0,
-    description: '', 
-    icon: ''}])
+  const [currentWeather, setCurrentWeather] = useState(currentWeatherObj);
+  const [HourlyForecast, setHourlyForecast] = useState(hourlyWeatherObj)
 
   const getWeather = async () => {
     axios.get(`https://api.openweathermap.org/data/3.0/onecall?units=imperial&lat=38.8339578&lon=-104.825348&exclude=minutely&appid=${env.API_KEY}`)
@@ -50,8 +30,10 @@ function App() {
 
   return (
     <div className="App">
+      {/* <Container> */}
       <CurrentWeather currentWeather={currentWeather} />
       {/* <HourlyForecast /> */}
+      {/* </Container> */}
     </div>
   );
 }

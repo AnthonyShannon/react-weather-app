@@ -30,4 +30,4 @@ const CurrentWeather = ({ currentWeather }: CurrentWeatherTypes) => {
     )
 }
 
-export default CurrentWeather; 
+export default CurrentWeather;  

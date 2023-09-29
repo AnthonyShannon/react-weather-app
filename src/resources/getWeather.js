@@ -13,3 +13,8 @@ export const getCurrentWeather = (weather) => {
     }
     return currentWeather;
 }
+
+export const getHourlyWeather = (weather) => {
+    const hourly = weather.hourly;
+    
+}

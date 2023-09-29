@@ -27,3 +27,10 @@ export interface HourlyForecastTypes {
         icon: string
     }[]
 }
+
+export interface ContainerTypes {
+    containerProps: {
+        // size: string,
+        children?: JSX.Element,
+    }
+}

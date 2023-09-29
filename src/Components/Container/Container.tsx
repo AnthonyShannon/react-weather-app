@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { Children, FC } from 'react';
 import './Container.scss'
+import { ContainerTypes } from '../../resources/interfaces';
 
-const Container = () => {
+const Container = ({  }: ContainerTypes) => {
+
     return (
-        <div>
-
+        <div style={{ width: '100vw' }}>
+            {/* {children} */}
         </div>
     )
 }

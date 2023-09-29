@@ -47,7 +47,7 @@ window.env = {
   "npm_package_name": "react-weather-app",
   "npm_package_version": "0.1.0",
   "NUMBER_OF_PROCESSORS": "8",
-  "OLDPWD": "C:/Users/ashan/Code",
+  "OLDPWD": "C:/Users/ashan",
   "OneDrive": "C:\\Users\\ashan\\OneDrive",
   "OneDriveConsumer": "C:\\Users\\ashan\\OneDrive",
   "OS": "Windows_NT",
@@ -79,7 +79,7 @@ window.env = {
   "WINDIR": "C:\\WINDOWS",
   "WSLENV": "WT_SESSION::WT_PROFILE_ID",
   "WT_PROFILE_ID": "{f964880e-9be5-4a27-b7d3-b9a11d8cd9af}",
-  "WT_SESSION": "4ce45f0b-26fe-41c2-8428-2a6992312c24",
+  "WT_SESSION": "377a25f7-9875-4281-8cba-edd7769056da",
   "ZES_ENABLE_SYSMAN": "1",
   "_": "C:/Program Files/nodejs/node.exe"
 };
