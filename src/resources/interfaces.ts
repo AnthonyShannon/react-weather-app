@@ -31,6 +31,11 @@ export interface HourlyForecastTypes {
 }
 
 export interface CardTypes {
-        children?: ReactNode,
+        children: ReactNode,
         size?: string,
+}
+
+export interface ContainerTypes {
+    children: ReactNode,
+    size?: string,
 }

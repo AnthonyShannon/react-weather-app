@@ -2,7 +2,7 @@ import React, { Children, FC } from 'react';
 import './Card.scss'
 import { CardTypes } from '../../resources/interfaces';
 
-const Container = ({children, size}: CardTypes) => {
+const Card = ({children, size}: CardTypes) => {
 
     return (
         <div className={`card ${size && `card-${size}`}`}>
@@ -11,4 +11,4 @@ const Container = ({children, size}: CardTypes) => {
     )
 }
 
-export default Container;
+export default Card;
