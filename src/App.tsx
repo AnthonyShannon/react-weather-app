@@ -30,7 +30,7 @@ function App() {
 
   return (
     <div className="App">
-      <Card>
+      <Card size='md'>
         <CurrentWeather currentWeather={currentWeather} />
         {/* <HourlyForecast /> */}
       </Card>

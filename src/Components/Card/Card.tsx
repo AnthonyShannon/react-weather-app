@@ -1,11 +1,11 @@
 import React, { Children, FC } from 'react';
 import './Card.scss'
-import { ContainerTypes } from '../../resources/interfaces';
+import { CardTypes } from '../../resources/interfaces';
 
-const Container = ({children}: ContainerTypes) => {
+const Container = ({children, size}: CardTypes) => {
 
     return (
-        <div className='container'>
+        <div className={`card ${size && `card-${size}`}`}>
             {children}
         </div>
     )

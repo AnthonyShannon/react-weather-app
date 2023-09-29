@@ -30,6 +30,7 @@ export interface HourlyForecastTypes {
     }[]
 }
 
-export interface ContainerTypes {
+export interface CardTypes {
         children?: ReactNode,
+        size?: string,
 }

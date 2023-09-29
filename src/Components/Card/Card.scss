@@ -1,4 +1,4 @@
-.container {
+.card {
     width: 500px;
     border-style: solid;
     border-color: lightgray;
@@ -6,4 +6,24 @@
     border-radius: 10px;
     box-shadow: 10px 5px 5px gray;
     margin: auto;
+}
+
+.card-xs {
+    width: 100px;
+}
+
+.card-sm {
+    width: 250px;
+}
+
+.card-md {
+    width: 500px;
+}
+
+.card-lg {
+    width: 750pxpx;
+}
+
+.card-xl {
+    width: 1000px;
 }
