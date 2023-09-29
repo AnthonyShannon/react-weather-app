@@ -1,12 +1,12 @@
 import React, { Children, FC } from 'react';
-import './Container.scss'
+import './Card.scss'
 import { ContainerTypes } from '../../resources/interfaces';
 
-const Container = ({  }: ContainerTypes) => {
+const Container = ({children}: ContainerTypes) => {
 
     return (
-        <div style={{ width: '100vw' }}>
-            {/* {children} */}
+        <div className='container'>
+            {children}
         </div>
     )
 }

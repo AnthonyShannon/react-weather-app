@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { CurrentWeather, HourlyForecast, Container } from './Components';
+import { CurrentWeather, HourlyForecast, Card } from './Components';
 import env from 'react-dotenv';
 import axios from 'axios';
 import { getCurrentWeather } from './resources/getWeather';
@@ -30,10 +30,10 @@ function App() {
 
   return (
     <div className="App">
-      {/* <Container> */}
-      <CurrentWeather currentWeather={currentWeather} />
-      {/* <HourlyForecast /> */}
-      {/* </Container> */}
+      <Card>
+        <CurrentWeather currentWeather={currentWeather} />
+        {/* <HourlyForecast /> */}
+      </Card>
     </div>
   );
 }

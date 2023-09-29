@@ -1,3 +1,5 @@
+import { ReactNode } from "react"
+
 export interface CurrentWeatherTypes {
     currentWeather: {
         city: string,
@@ -29,8 +31,5 @@ export interface HourlyForecastTypes {
 }
 
 export interface ContainerTypes {
-    containerProps: {
-        // size: string,
-        children?: JSX.Element,
-    }
+        children?: ReactNode,
 }

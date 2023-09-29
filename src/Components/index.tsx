@@ -1,5 +1,5 @@
 import CurrentWeather from "./CurrentWeather/CurrentWeather";
 import HourlyForecast from "./HourlyForecast/HourlyForecast";
-import Container from "./Container/Container";
+import Card from "./Card/Card";
 
-export { CurrentWeather, HourlyForecast, Container };
+export { CurrentWeather, HourlyForecast, Card };
