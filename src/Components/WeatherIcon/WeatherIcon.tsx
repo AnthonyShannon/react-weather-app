@@ -1,10 +1,10 @@
 import React from 'react';
 
-interface Prop {
+interface Props {
     iconCode: string
 };
 
-const WeatherIcon = ({iconCode}: Prop ) => (
+const WeatherIcon = ({iconCode}: Props ) => (
     <img src={`http://openweathermap.org/img/wn/${iconCode}.png`} alt='weather icon' />
 )
 
