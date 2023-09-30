@@ -12,7 +12,8 @@ const currentWeatherObj = {
 
 const hourlyWeatherObj = [
     {
-        dateTime: new Date(),
+        date: new Date().toLocaleDateString(),
+        time: new Date().toLocaleTimeString(),
         temp: 0,
         feelsLike: 0,
         pressure: 0,
@@ -22,6 +23,8 @@ const hourlyWeatherObj = [
         windSpeed: 0,
         windDirection: 0,
         description: '',
+        main: '',
+        chancePrecipitaion: 0,
         icon: ''
     }]
 

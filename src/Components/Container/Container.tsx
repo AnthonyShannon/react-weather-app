@@ -1,4 +1,4 @@
-import React, { Children, FC } from 'react';
+import React from 'react';
 import './Container.scss'
 import { ContainerTypes } from '../../resources/interfaces';
 
