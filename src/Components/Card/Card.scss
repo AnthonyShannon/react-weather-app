@@ -7,6 +7,14 @@
     box-shadow: 5px 5px 10px gray;
     margin: auto;
     margin-top: 10px;
+    padding: 5px 10px 5px 10px;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+.card::-webkit-scrollbar {
+    scrollbar-width: none;
+    display: none;
 }
 
 .card-xs {

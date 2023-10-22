@@ -5,7 +5,7 @@ import { Card } from '..'
 import * as d3 from 'd3';
 
 const HourlyChart = ({ hourlyWeather },
-    { width = 450,
+    { width = 1500,
         height = 400,
         marginTop = 20,
         marginRight = 20,
@@ -32,10 +32,10 @@ const HourlyChart = ({ hourlyWeather },
     const gy = useRef();
 
     const next12hours = hourlyWeather.slice(0, 13)
-    const hourlyTemps = getHourlyTemp(next12hours)
+    const hourlyTemps = getHourlyTemp(hourlyWeather)
     const hourlyTimes = getTimes(next12hours)
 
-    const x = d3.scaleLinear([0, 12], [marginLeft, width - marginRight]);
+    const x = d3.scaleLinear([0, hourlyTemps.length], [marginLeft, width - marginRight]);
     const y = d3.scaleLinear(d3.extent(hourlyTemps), [height - marginBottom, marginTop]);
     const line = d3.line((d, i) => x(i), y);
     useEffect(() => void d3.select(gx.current).call(d3.axisBottom(x)), [gx, x]);
