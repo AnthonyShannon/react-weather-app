@@ -1,4 +1,11 @@
 .flex-column {
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+#icon-and-temp {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }

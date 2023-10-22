@@ -1,4 +1,6 @@
 .container {
+    display: flex;
+    justify-content: center;
     max-width: 1500px;
     margin: auto;
 }
@@ -16,7 +18,7 @@
 }
 
 .container-lg {
-    width: 1000pxpx;
+    width: 1000px;
 }
 
 .container-xl {

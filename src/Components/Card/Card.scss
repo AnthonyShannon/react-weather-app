@@ -3,9 +3,10 @@
     border-style: solid;
     border-color: lightgray;
     border-width: 1px;
-    border-radius: 10px;
-    box-shadow: 10px 5px 5px gray;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 10px gray;
     margin: auto;
+    margin-top: 10px;
 }
 
 .card-xs {
@@ -21,7 +22,7 @@
 }
 
 .card-lg {
-    width: 750pxpx;
+    width: 750px;
 }
 
 .card-xl {

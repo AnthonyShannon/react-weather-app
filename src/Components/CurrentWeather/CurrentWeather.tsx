@@ -1,6 +1,5 @@
 import React from 'react';
-import WeatherIcon from '../WeatherIcon/WeatherIcon';
-import Card from '../Card/Card';
+import { WeatherIcon, Card } from '../index'
 import { CurrentWeatherTypes } from '../../resources/interfaces';
 import './CurrentWeather.scss'
 
@@ -22,8 +21,11 @@ const CurrentWeather = ({ currentWeather }: CurrentWeatherTypes) => {
             <div className='flex-column'>
                 <span>{city}</span>
                 <div className='flex-column'>
-                    <span><WeatherIcon iconCode={icon} />{temp + '\u00B0F'}</span>
-                    <span>{`Feels like ${feelsLike}\u00B0F. ${formattedDesc}`}.</span>
+                    <div id='icon-and-temp'>
+                        <WeatherIcon iconCode={icon} />
+                        <span>{Math.round(temp) + '\u00B0F'}</span>
+                    </div>
+                    <span>{`Feels like ${Math.round(feelsLike)}\u00B0F. ${formattedDesc}`}.</span>
                     <span>{`Humidity: ${humidity}%`}</span>
                     <span>{`Visibility: ${visibility}m`}</span>
                 </div>

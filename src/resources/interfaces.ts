@@ -47,5 +47,14 @@ export interface ButtonTypes {
     buttonText: string,
     color?: string,
     clickFunc?: Function,
-    children? : ReactNode
+    children? : ReactNode,
+}
+
+export interface LinePlotTypes {
+    width?: number,
+    height?: number,
+    marginTop?: number,
+    marginRight?: number,
+    marginBottom?:number,
+    marginLeft?: number,
 }

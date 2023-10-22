@@ -40,6 +40,5 @@ export const getHourlyWeather = (weather) => {
         }
         hourlyWeather.push(currentHourObj)
     })
-    console.log(hourlyWeather)
     return hourlyWeather;
 }

@@ -1,22 +1,23 @@
-import React from 'react';
-import Card from '../Card/Card';
+import { Card, WeatherIcon } from '../index';
 import { HourlyForecastTypes } from '../../resources/interfaces';
+import './HourlyForecast.scss'
 
 const HourlyForecast = ({ hourlyWeather }: HourlyForecastTypes) => {
-    console.log(hourlyWeather);
+    const next12hours = hourlyWeather.slice(0, 24)
 
     return (
-        <>
-            {hourlyWeather.map(currentHour => (
+        <div className='flex-column'>
+            {next12hours.map(currentHour => (
                 <Card>
-                    <>
+                    <div className='hourly-weather'>
+                        <WeatherIcon iconCode={currentHour.icon} />
                         <span>{currentHour.description}</span>
                         <span>{currentHour.date}</span>
                         <span>{currentHour.time}</span>
-                    </>
+                    </div>
                 </Card>
             ))}
-        </>
+        </div>
     )
 }
 
