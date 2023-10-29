@@ -9,12 +9,30 @@
     margin-top: 10px;
     padding: 5px 10px 5px 10px;
     overflow: hidden;
+}
+
+.card-scroll {
     overflow-x: scroll;
 }
 
-.card::-webkit-scrollbar {
-    scrollbar-width: none;
-    display: none;
+.card-scroll::-webkit-scrollbar {
+    height: 10px;
+    padding-left: 100px;
+  }
+  
+
+.card-scroll::-webkit-scrollbar-thumb {
+    background-color: #808080;
+    border-radius: 10px;
+}
+
+.card-scroll::-webkit-scrollbar-thumb:hover {
+    background-color: #696969;
+}
+
+.card-scroll::-webkit-scrollbar-track {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .card-xs {

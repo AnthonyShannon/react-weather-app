@@ -14,6 +14,46 @@ export interface CurrentWeatherTypes {
     }
 }
 
+export interface DailyForecastTypes {
+    dailyForecast: {
+        date: string,
+        sunrise: string,
+        sunset: string,
+        moonrise: string,
+        moonset: string,
+        moonPhase: number,
+        summary: string,
+        temp: {
+            day: number,
+            night: number,
+            morning: number,
+            evening: number,
+            min: number,
+            max: number,
+        }
+        feelsLike: {
+            day: number,
+            night: number,
+            morning: number,
+            evening: number,
+        },
+        pressure: number,
+        humidity: number,
+        dewPoint: number,
+        windSpeed: number,
+        windDirection: number,
+        windGust: number,
+        weather: {
+            main: string,
+            description: string,
+            icon: string
+        },
+        clouds: number,
+        chancePrecipitaion: number,
+        uvIndex: number
+    }[]
+}
+
 export interface HourlyForecastTypes {
     hourlyWeather: {
         date: string,
@@ -36,6 +76,7 @@ export interface HourlyForecastTypes {
 export interface CardTypes {
     children: ReactNode,
     size?: string,
+    scrollable?: boolean,
 }
 
 export interface ContainerTypes {

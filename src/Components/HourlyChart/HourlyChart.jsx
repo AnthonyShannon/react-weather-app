@@ -42,7 +42,7 @@ const HourlyChart = ({ hourlyWeather },
     useEffect(() => void d3.select(gy.current).call(d3.axisLeft(y)), [gy, y]);
 
     return (
-        <Card>
+        <Card scrollable>
             <svg width={width} height={height}>
                 <g ref={gx} transform={`translate(0,${height - marginBottom})`} />
                 <g ref={gy} transform={`translate(${marginLeft},0)`} />
