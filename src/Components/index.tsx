@@ -1,9 +1,10 @@
-import CurrentWeather from "./CurrentWeather/CurrentWeather";
-import HourlyForecast from "./HourlyForecast/HourlyForecast";
-import HourlyChart from "./HourlyChart/HourlyChart";
+import Button from "./Button/Button";
 import Card from "./Card/Card";
 import Container from "./Container/Container";
-import Button from "./Button/Button";
+import CurrentWeather from "./CurrentWeather/CurrentWeather";
+import DailyForecast from "./DailyForecast/DailyForecast";
+import HourlyChart from "./HourlyChart/HourlyChart";
+import HourlyForecast from "./HourlyForecast/HourlyForecast";
 import WeatherIcon from "./WeatherIcon/WeatherIcon";
 
-export { CurrentWeather, HourlyForecast, Card, Container, Button, WeatherIcon, HourlyChart };
+export { Button, Card, Container, CurrentWeather, DailyForecast, HourlyChart, HourlyForecast, WeatherIcon };

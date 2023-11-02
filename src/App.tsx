@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { CurrentWeather,  HourlyChart, HourlyForecast, Card, Container, Button, } from './Components';
+import { CurrentWeather, DailyForecast,  HourlyChart, HourlyForecast, Container, } from './Components';
 import env from 'react-dotenv';
 import axios from 'axios';
 import { getCurrentWeather, getDailyWeather, getHourlyWeather } from './resources/getWeather';
@@ -37,6 +37,7 @@ function App() {
           <HourlyForecast hourlyWeather={hourlyForecast} />
         </div>
         <HourlyChart hourlyWeather={hourlyForecast} />
+        {/* <DailyForecast dailyForecast={dailyForecast} /> */}
       </Container>
     </div>
   );
