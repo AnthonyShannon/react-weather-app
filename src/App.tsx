@@ -3,14 +3,14 @@ import { CurrentWeather, DailyForecast,  HourlyChart, HourlyForecast, Container,
 import env from 'react-dotenv';
 import axios from 'axios';
 import { getCurrentWeather, getDailyWeather, getHourlyWeather } from './resources/getWeather';
-import { currentWeatherObj, hourlyWeatherObj } from './resources/stateTemplates';
+import { currentWeatherObj, dailyForecastObj, hourlyWeatherObj } from './resources/stateTemplates';
 import './App.scss';
 
 function App() {
 
   const [currentWeather, setCurrentWeather] = useState(currentWeatherObj);
+  const [dailyForecast, setDailyForecast] = useState(dailyForecastObj);
   const [hourlyForecast, setHourlyForecast] = useState(hourlyWeatherObj);
-  const [dailyForecast, setDailyForecast] = useState({});
 
   const getWeather = async () => {
     axios.get(`https://api.openweathermap.org/data/3.0/onecall?units=imperial&lat=38.8339578&lon=-104.825348&exclude=minutely&appid=${env.API_KEY}`)
@@ -37,7 +37,7 @@ function App() {
           <HourlyForecast hourlyWeather={hourlyForecast} />
         </div>
         <HourlyChart hourlyWeather={hourlyForecast} />
-        {/* <DailyForecast dailyForecast={dailyForecast} /> */}
+        <DailyForecast dailyForecast={dailyForecast} />
       </Container>
     </div>
   );

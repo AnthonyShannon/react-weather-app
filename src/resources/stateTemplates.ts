@@ -28,4 +28,42 @@ const hourlyWeatherObj = [
         icon: ''
     }]
 
-export { currentWeatherObj, hourlyWeatherObj}
+const dailyForecastObj = [{
+    date: '',
+    sunrise: '',
+    sunset: '',
+    moonrise: '',
+    moonset: '',
+    moonPhase: 0,
+    summary: '',
+    temp: {
+        day: 0,
+        night: 0,
+        morning: 0,
+        evening: 0,
+        min: 0,
+        max: 0,
+    },
+    feelsLike: {
+        day: 0,
+        night: 0,
+        morning: 0,
+        evening: 0,
+    },
+    pressure: 0,
+    humidity: 0,
+    dewPoint: 0,
+    windSpeed: 0,
+    windDirection: 0,
+    windGust: 0,
+    weather: {
+        main: '',
+        description: '',
+        icon: ''
+    },
+    clouds: 0,
+    chancePrecipitaion: 0,
+    uvIndex: 0
+}]
+
+export { currentWeatherObj, hourlyWeatherObj, dailyForecastObj }
